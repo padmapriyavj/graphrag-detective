@@ -1,0 +1,21 @@
+{
+  "name": "graphrag-detective",
+  "version": "1.0.0",
+  "description": "> When a microservice fails, GraphRAG Detective traces the blast radius across your dependency graph and surfaces similar past incidents, giving engineers a ranked root-cause hypothesis in seconds instead of hours.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "neo4j-driver": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
