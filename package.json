@@ -4,7 +4,9 @@
   "description": "> When a microservice fails, GraphRAG Detective traces the blast radius across your dependency graph and surfaces similar past incidents, giving engineers a ranked root-cause hypothesis in seconds instead of hours.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:connection": "ts-node src/test-connection.ts",
+    "seed": "ts-node src/seed/seedGraph.ts"
   },
   "keywords": [],
   "author": "",

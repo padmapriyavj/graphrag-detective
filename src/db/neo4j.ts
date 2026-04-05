@@ -6,9 +6,9 @@ dotenv.config();
 
 const URI = process.env.NEO4J_URI as string;
 const USER = process.env.NEO4J_USER as string;
-const PASDWORD = process.env.NEO4J_PASSWORD as string;
+const PASSDWORD = process.env.NEO4J_PASSWORD as string;
 
-if (!URI || !USER || !PASDWORD) {
+if (!URI || !USER || !PASSDWORD) {
   throw new Error("Missing Neo4j configuration in .env file");
 }
 
@@ -16,7 +16,7 @@ let driver: Driver;
 
 export function getDriver(): Driver {
   if (!driver) {
-    driver = neo4j.driver(URI, neo4j.auth.basic(USER, PASDWORD));
+    driver = neo4j.driver(URI, neo4j.auth.basic(USER, PASSDWORD));
   }
   return driver;
 }
