@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:connection": "ts-node src/test-connection.ts",
     "seed": "ts-node src/seed/seedGraph.ts",
-    "test:traversal": "ts-node src/test-traversal.ts"
+    "test:traversal": "ts-node src/test-traversal.ts",
+    "test:graph-service": "ts-node src/test-graph-service.ts"
   },
   "keywords": [],
   "author": "",
