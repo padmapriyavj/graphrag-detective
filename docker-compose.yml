@@ -24,3 +24,21 @@ services:
       interval: 10s
       timeout: 10s
       retries: 5
+  postgres:
+    image: ankane/pgvector:latest
+    container_name: graphrag-postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: graphrag
+      POSTGRES_USER: graphrag_user
+      POSTGRES_PASSWORD: graphrag_pass
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+    healthcheck:
+      test: pg_isready -U graphrag_user -d graphrag
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  pgvector_data:

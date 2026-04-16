@@ -10,7 +10,8 @@
     "test:traversal": "ts-node src/test-traversal.ts",
     "test:graph-service": "ts-node src/test-graph-service.ts",
     "producer": "ts-node src/kafka/producer.ts",
-    "consumer": "ts-node src/kafka/consumer.ts"
+    "consumer": "ts-node src/kafka/consumer.ts",
+    "test:pg-connection": "ts-node src/test-pg-connection.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,10 +19,12 @@
   "dependencies": {
     "dotenv": "^17.4.0",
     "kafkajs": "^2.2.4",
-    "neo4j-driver": "^6.0.1"
+    "neo4j-driver": "^6.0.1",
+    "pg": "^8.20.0"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
+    "@types/pg": "^8.20.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
   }
